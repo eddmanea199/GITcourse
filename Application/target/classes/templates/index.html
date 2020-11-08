@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-image: url("https://scontent.fotp1-2.fna.fbcdn.net/v/t1.0-9/30265146_413622775731917_6538600759578112039_n.png?_nc_cat=1&ccb=2&_nc_sid=85a577&_nc_ohc=04JxLGNNC98AX-AiHik&_nc_ht=scontent.fotp1-2.fna&oh=a28e1c23403a528808afd8dc8123b7fb&oe=5FBC823C");
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <a th:href="@{/employee}"
+               role="button"
+               class="btn btn-outline-primary btn-lg btn-block text-center">
+                <span></span>
+                <br>
+                Employees
+            </a>
+        </div>
+        <div class="col-sm">
+            <a th:href="@{/project}"
+               role="button"
+               class="btn btn-outline-primary btn-lg btn-block text-center">
+                <span></span>
+                <br>
+                Projects
+            </a>
+        </div>
+        <div class="col-sm">
+            <a th:href="@{/department}"
+               role="button"
+               class="btn btn-outline-primary btn-lg btn-block text-center">
+                <span></span>
+                <br>
+                Departments
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
